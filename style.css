@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height: 60px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo img{
+    margin: 2px 7px;
+    width: 102px;
+    height: 111px;
+    border-radius: 110px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 23px;
+   border-radius: 30px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(59, 0, 115);
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 728px;
+}
+#home::before{
+    content: "";
+    background: url(111.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 13px;
+    font-family: cursive;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: cursive;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home p{
+    color: black;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 6px 19px;
+    border: 2px solid red;
+    color: rgb(22, 3, 3);
+    margin: 15px;
+    border-radius: 50px;
+    background-color: rgb(254, 254, 196);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.center{
+    text-align: center;
+}
+
+
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid burlywood;
+    padding: 34px;
+    margin: 4px 7px;
+    border-radius: 29px;
+    background-color: gray;
+}
+
+#services .box img{
+    height: 162px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.client-item{
+    padding: 3px 20px;
+}
+
+#client-section::before{
+    content: "";
+    background: url(contact.jpg);
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#client-section{
+    position: relative;
+}
+
+
+/* contacts */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(bg2.jpg) no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 4px 8px;
+}
+
+#contact h1{
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 120%;
+    padding: 0px 5px;
+    border-radius: 9px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+
+#contact-box form{
+    width: 50%
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+html{
+   scroll-behavior: smooth;
+} 
+
+/* external */
+.btn1{
+    border: 2px solid red;
+    font-size: 1.0rem;
+    margin: 6px 6px;
+    padding: 8px;
+    background-color: rgb(213, 202, 191);
+    border-radius: 18px;
+}
